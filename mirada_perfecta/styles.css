@@ -1,0 +1,12 @@
+*{
+    font-family: "Lora";
+}
+
+.navbar-menu {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .navbar-menu.active {
+            max-height: 500px;
+        }

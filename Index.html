@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B Brew & Brush - Menú</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#BF9B30',
+                            600: '#AA8C2B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-pattern {
+            background-color: #000000;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="hero-pattern py-8 px-4 text-center border-b-2 border-gold-400">
+        <h1 class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">B&B</h1>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">BREW & BRUSH</h2>
+        <p class="text-gold-400 mt-4 text-lg">CREA CON NOSOTROS</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-black z-10 border-b border-gold-400">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-center space-x-4 md:space-x-8">
+                <a href="#cafes" class="text-gold-400 hover:text-white transition-colors duration-300">Cafés Clásicos</a>
+                <a href="#bebidas" class="text-gold-400 hover:text-white transition-colors duration-300">Bebidas</a>
+                <a href="#panes" class="text-gold-400 hover:text-white transition-colors duration-300">Panes</a>
+                <a href="#postres" class="text-gold-400 hover:text-white transition-colors duration-300">Postres</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Café Section -->
+        <section id="cafes" class="mb-16">
+            <h2 class="text-3xl font-bold text-gold-400 mb-8 text-center border-b border-gold-400 pb-2">CAFÉS CLÁSICOS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Café -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                            alt="Café Americano" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">AMERICANO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 Un clásico para los amantes del café suave. Hecho con espresso y agua caliente, ofrece un sabor intenso pero menos concentrado que un espresso puro.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 2.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1494314671902-399b18174975?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhZmVzfGVufDB8fDB8fHww" 
+                            alt="Café Americano" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">EXPRESO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 La esencia del café. Una pequeña pero poderosa bebida de café concentrado, ideal para un impulso de energía rápido y directo.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 2.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FmZXN8ZW58MHx8MHx8fDA%3D" 
+                            alt="Café Americano" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">ICED LATTE</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                El equilibrio perfecto entre café y leche, servido frío. Una opción refrescante y cremosa, ideal para los días calurosos.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 4.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fGNhZmVzfGVufDB8fDB8fHww" 
+                            alt="Café Americano" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">MOKACCINO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Un delicioso placer para quienes buscan combinar café y chocolate. Es una mezcla de espresso, leche vaporizada y jarabe de chocolate.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 4.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Más tarjetas de café... -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fGNhZmVzfGVufDB8fDB8fHww" 
+                            alt="Cappuchino" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">CAPPUCHINO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Un café tradicional con la armonía ideal de espresso, leche y una generosa capa de espuma. Suaves notas de leche se complementan con el sabor robusto del café.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 3.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1195&q=80" 
+                            alt="Latte" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">LATTE</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 Cremoso y suave, este café combina espresso con una gran cantidad de leche vaporizada y una fina capa de espuma. Es la bebida ideal si prefieres un sabor a café más delicado.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 3.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bebidas Section -->
+        <section id="bebidas" class="mb-16">
+            <h2 class="text-3xl font-bold text-gold-400 mb-8 text-center border-b border-gold-400 pb-2">BEBIDAS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Bebida -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
+                            alt="Chocolate Caliente" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">MERENGADA DE OREO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una bebida indulgente y dulce, hecha con galletas Oreo trituradas y helado, creando una textura espesa y un sabor irresistible.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 5.50</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmViaWRhc3xlbnwwfHwwfHx8MA%3D%3D" 
+                            alt="Chocolate Caliente" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">LIMONADA</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                La bebida refrescante por excelencia. Preparada con jugo de limón natural, es la manera perfecta de refrescarte y rehidratarte.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 3.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://plus.unsplash.com/premium_photo-1720552288884-5d2bd99ecd19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYmlkYXN8ZW58MHx8MHx8fDA%3D" 
+                            alt="Chocolate Caliente" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">LIMONADA GRANIZADA DE PEPINO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una opción innovadora y muy refrescante. Combina la acidez de la limonada con el toque fresco y herbal del pepino, servida en forma de granizado.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 4.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmViaWRhc3xlbnwwfDB8MHx8fDA%3D" 
+                            alt="Chocolate Caliente" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">JUGOS NATURALES</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Delicioso chocolate caliente, cremoso y con un intenso sabor a cacao.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 4.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Más tarjetas de bebidas... -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1527499861446-cc219aea45ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJlYmlkYXN8ZW58MHwwfDB8fHww" 
+                            alt="Limonada" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">LIMONADA HIERBABUENA</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 Una variante de la limonada clásica con un toque revitalizante. El sabor de la hierbabuena fresca añade un aroma y una frescura únicos.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 4.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1576873866239-7d7fd7402e1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI0fHxiZWJpZGFzfGVufDB8MHwwfHx8MA%3D%3D" 
+                            alt="Jugos Naturales" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">FRAPUCCINO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una bebida helada y espumosa, hecha a base de café, leche y hielo. Es ideal para disfrutar de una versión más dulce y cremosa de tu café.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 5.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panes Section -->
+        <section id="panes" class="mb-16">
+            <h2 class="text-3xl font-bold text-gold-400 mb-8 text-center border-b border-gold-400 pb-2">PANES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Pan -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1599940778173-e276d4acb2bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBhbnxlbnwwfDB8MHx8fDA%3D" 
+                            alt="Pan Francés" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">CACHITO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                               Un pan suave y dulce, a menudo relleno de jamón, queso o chocolate. Es un pan tradicional que se disfruta en el desayuno o como merienda.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.50</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1601034693303-8f8848f3ffa1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fHBhbnxlbnwwfDB8MHx8fDA%3D" 
+                            alt="Pan Francés" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">PAN DULCE</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una delicia esponjosa con un toque de dulzura. Su textura suave y su sabor ligeramente dulce lo hacen perfecto para acompañar tu café.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.70</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1590666379301-3fceee6b838b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYW58ZW58MHwwfDB8fHww" 
+                            alt="Pan Francés" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">FRANCÉS</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Un pan rústico con una corteza crujiente y un interior suave y esponjoso. Es ideal para acompañar comidas, sándwiches o simplemente con mantequilla.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.30</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1710220988673-ea5fdef36de4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYzfHxwYW58ZW58MHwwfDB8fHww" 
+                            alt="Pan Francés" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">PIÑITA DE COCO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 Un pan dulce con un delicioso sabor a coco, que lo hace irresistible. Es un bocado exótico y tropical perfecto para cualquier momento del día.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.20</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Más tarjetas de panes... -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://plus.unsplash.com/premium_photo-1687975124327-f9e69a7ddb90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA5fHxwYW58ZW58MHwwfDB8fHww" 
+                            alt="Pan de Queso" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">PAN QUESO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Un pan suave y salado relleno de queso derretido. Es una opción deliciosa y reconfortante, perfecta para un desayuno rápido.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 2.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1606727954341-7be3e7635869?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYyfHxwYW58ZW58MHwwfDB8fHww" 
+                            alt="Croissant" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">PAN OREGANO</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 (Aunque la imagen es un croissant) Un pan con un toque aromático de orégano, ideal para quienes buscan un sabor más salado y especiado.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.80</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Postres Section -->
+        <section id="postres" class="mb-16">
+            <h2 class="text-3xl font-bold text-gold-400 mb-8 text-center border-b border-gold-400 pb-2">POSTRES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Postre -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9zdHJlc3xlbnwwfDB8MHx8fDA%3D" 
+                            alt="Tarta de Chocolate" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">TARTA DE CHOCOLATE</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una exquisita y clásica tarta de chocolate con una base crujiente y una textura increíblemente cremosa, creando el balance perfecto de sabor y consistencia.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 2.50</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1496890607984-d27fca8a68ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHBvc3RyZXN8ZW58MHwwfDB8fHww" 
+                            alt="Tarta de Chocolate" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">GALLETAS AVENA</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 Estas galletas son la opción perfecta para un dulce más saludable, con un sabor suave y una textura masticable. Son ideales para acompañar tu café o té.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.60</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1635716285312-06003a529312?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTExfHxwb3N0cmVzfGVufDB8MHwwfHx8MA%3D%3D" 
+                            alt="Tarta de Chocolate" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">PIE DE PARCHITA</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                 Un postre tropical y refrescante. Este pie se destaca por su sabor agridulce y vibrante, ideal para quienes buscan una experiencia frutal y diferente.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 2.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1728238319028-a2ae0d43cff0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxwb3N0cmVzfGVufDB8MHwwfHx8MA%3D%3D" 
+                            alt="Tarta de Chocolate" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">COOKIE</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una galleta clásica, suave y con un interior ligeramente masticable, que se deshace en la boca. Perfecta para un antojo dulce.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Más tarjetas de postres... -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1716449969761-58ccc88262f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI2fHxwb3N0cmVzfGVufDB8MHwwfHx8MA%3D%3D" 
+                            alt="Cheesecake" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">COOKIE ESPECIAL</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Una galleta con un toque especial, ya sea con chispas de chocolate, frutos secos o un relleno sorpresa. Es un postre irresistible.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 1.50</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col h-full">
+                    <div class="w-full h-48 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1598149281008-945e78df18f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYzfHxwb3N0cmVzfGVufDB8MHwwfHx8MA%3D%3D" 
+                            alt="Tiramisú" 
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">PIE DE LIMON</h3>
+                        
+                        <div class="mb-4 flex-grow">
+                            <p class="text-gray-300 text-sm mb-2">
+                                Un postre refrescante con una explosión de sabor cítrico. Su relleno suave y ligeramente ácido, combinado con su base de galleta, lo convierte en un favorito.
+                            </p>
+                            <p class="text-gold-400 font-bold text-lg mt-2">REF. 2.00</p>
+                        </div>
+                        
+                        <a href="#" class="w-full">
+                            <button class="w-full bg-gold-500 hover:bg-gold-600 text-black py-2 px-4 rounded transition-colors duration-300 mt-auto font-bold">
+                                Pedir ahora
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-400 py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h3 class="text-xl font-bold text-gold-400 mb-2">B&B Brew & Brush</h3>
+                    <p class="text-gray-400">Café • Arte • Experiencias</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gold-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gold-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gold-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">Horario: Lunes a Sábado 8:00 - 20:00</p>
+                    <p class="text-gray-400">Dirección: Calle Principal #123, Ciudad</p>
+                    <p class="text-gray-400">Teléfono: (123) 456-7890</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gold-400 mt-8 pt-6 text-center">
+                <p class="text-gray-500 text-sm">© 2025 B&B Brew & Brush. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
